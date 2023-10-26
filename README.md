@@ -1,6 +1,6 @@
 # CheerpJ Epsilon Demonstration
 
-Example showing how Epsilon can run in the browser through [CheerpJ](https://labs.leaningtech.com/cheerpj3).
+Example showing how [Epsilon](https://eclipse.dev/epsilon) can run in the browser through [CheerpJ](https://labs.leaningtech.com/cheerpj3).
 
 ## Instructions
 
