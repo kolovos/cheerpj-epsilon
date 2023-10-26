@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <script src="https://cjrtnc.leaningtech.com/3.0rc1/cj3loader.js"></script>
+        <script type="module">
+            await cheerpjInit();
+            const cj = await cheerpjRunLibrary("/app/target/epsilon.jar");
+            const EolModule = await cj.org.eclipse.epsilon.eol.EolModule;
+            const m = await new EolModule();
+            const ok = await m.parse("return 'Hello from Epsilon';", null);
+            const result = await m.execute();
+            document.write(result);
+        </script>
+    </body>
+</html>
