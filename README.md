@@ -1,6 +1,6 @@
-# Cheerpj Epsilon Demonstration
+# CheerpJ Epsilon Demonstration
 
-Example showing how Epsilon can run in the browser through [Cheerpj](https://labs.leaningtech.com/cheerpj3).
+Example showing how Epsilon can run in the browser through [CheerpJ](https://labs.leaningtech.com/cheerpj3).
 
 ## Instructions
 
