@@ -14,7 +14,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
-        <epsilon.version>2.4.0</epsilon.version>
+        <epsilon.version>2.5.0</epsilon.version>
     </properties>
 
     <build>
