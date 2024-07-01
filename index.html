@@ -4,7 +4,9 @@
         <script type="module">
             await cheerpjInit();
             try {
-                const cj = await cheerpjRunLibrary("/app/target/emfatic.jar");
+                const emfaticFatJar = "/app" + window.location.pathname + "target/emfatic.jar";
+                console.log(emfaticFatJar);
+                const cj = await cheerpjRunLibrary(emfaticFatJar);
                 const CheerpJEmfatic = await cj.org.eclipse.emfatic.cheerpj.CheerpJEmfatic;
                 const m = await new CheerpJEmfatic();
                 const packageName = await m.getRootPackageName("package p;");
