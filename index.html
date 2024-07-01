@@ -3,12 +3,17 @@
         <script src="https://cjrtnc.leaningtech.com/3.0/cj3loader.js"></script>
         <script type="module">
             await cheerpjInit();
-            const cj = await cheerpjRunLibrary("/app/target/epsilon.jar");
-            const EolModule = await cj.org.eclipse.epsilon.eol.EolModule;
-            const m = await new EolModule();
-            const ok = await m.parse("return 'Hello from Epsilon';", null);
-            const result = await m.execute();
-            document.write(result);
+            try {
+                const cj = await cheerpjRunLibrary("/app/target/emfatic.jar");
+                const CheerpJEmfatic = await cj.org.eclipse.emfatic.cheerpj.CheerpJEmfatic;
+                const m = await new CheerpJEmfatic();
+                const packageName = await m.getRootPackageName("package p;");
+                document.write(packageName); // If this works, it should write "p" to the document
+            }
+            catch (err) {
+                console.log(err); // I'm getting a java.lang.ExceptionInInitializerError exception here
+                document.write("Error: " + await err.getMessage()); // ... and the message is null
+            }
         </script>
     </body>
 </html>
